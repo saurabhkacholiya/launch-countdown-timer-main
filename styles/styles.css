@@ -19,6 +19,8 @@
   height: calc(250px / 2);
   width: 250px;
   background-image: url("../batman.jpg");
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
   background-size: 250px 250px;
 }
 
@@ -26,16 +28,16 @@
   height: calc(250px / 2);
   width: 250px;
   background-image: url("../batman.jpg");
-  background-size: 250px 250px;
   background-position: 0px -100%;
-  -webkit-transform-origin: center top;
-          transform-origin: center top;
+  background-size: 250px 250px;
 }
 
-.img-style2:hover {
+.img-style1:hover {
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 /*# sourceMappingURL=styles.css.map */
