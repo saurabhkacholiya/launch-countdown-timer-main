@@ -1,0 +1,32 @@
+@mixin flexCenter {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  @include flexCenter();
+}
+
+.img-style1 {
+  height: calc(250px / 2);
+  width: 250px;
+  background-image: url("../batman.jpg");
+  background-size: 250px 250px;
+}
+
+.img-style2 {
+  height: calc(250px / 2);
+  width: 250px;
+  background-image: url("../batman.jpg");
+  background-size: 250px 250px;
+  background-position: 0px -100%;
+  transform-origin: center top;
+}
+
+.img-style2:hover {
+  transform: rotateX(180deg);
+  transition: all 0.5s ease-in;
+}
