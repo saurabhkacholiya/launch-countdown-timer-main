@@ -1,1 +1,114 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font: 700 14px/1 "Red Hat Text", sans-serif;
+  background: url("../images/bg-stars.svg"), #1b1924;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 19px 0 109px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+main {
+  height: 100vh;
+  background: url(../images/pattern-hills.svg) no-repeat 0 bottom;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 15vh;
+  position: relative;
+}
+
+.countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.title {
+  color: #8486a9;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.time-elem {
+  position: relative;
+  color: #fb6087;
+  position: relative;
+  height: 140px;
+  width: 150px;
+  background-color: #33354d;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 5.5em;
+  overflow: hidden;
+  margin-bottom: 27px;
+  line-height: 138px;
+  -webkit-box-shadow: 0px 8px 0px 0px #16151d;
+          box-shadow: 0px 8px 0px 0px #16151d;
+}
+
+.time-elem::before,
+.time-elem::after {
+  content: "";
+  position: absolute;
+  z-index: 6;
+  top: calc(50% - 5px);
+  background: #1b1924;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.time-elem::before {
+  left: -5px;
+}
+
+.time-elem::after {
+  right: -5px;
+}
+
+.countdown-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+}
+
+.countdown-block:last-child {
+  margin-right: 0;
+}
+/*# sourceMappingURL=styles.css.map */

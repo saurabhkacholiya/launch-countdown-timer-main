@@ -1,1 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 700 14px/1 "Red Hat Text", sans-serif;
+  background: url("../images/bg-stars.svg"), hsl(249, 18%, 12%);
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 19px 0 109px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+main {
+  height: 100vh;
+  background: url(../images/pattern-hills.svg) no-repeat 0 bottom;
+  background-size: contain;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 15vh;
+  position: relative;
+}
+
+.countdown {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.title {
+  color: hsl(237, 18%, 59%);
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.time-elem {
+  position: relative;
+  color: hsl(345, 95%, 68%);
+  position: relative;
+  height: 140px;
+  width: 150px;
+  background-color: hsl(235, 20%, 25%);
+  border-radius: 8px;
+  text-align: center;
+  font-size: 5.5em;
+  overflow: hidden;
+  margin-bottom: 27px;
+  line-height: 138px;
+  box-shadow: 0px 8px 0px 0px #16151d;
+}
+
+.time-elem::before,
+.time-elem::after {
+  content: "";
+  position: absolute;
+  z-index: 6;
+  top: calc(50% - 5px);
+  background: hsl(249, 18%, 12%);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.time-elem::before {
+  left: -5px;
+}
+
+.time-elem::after {
+  right: -5px;
+}
+
+.countdown-block {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
